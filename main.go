@@ -24,8 +24,8 @@ func main() {
 
 	createStudent()
 	getAllStudents()
-	// deleteStudentById(23)
-	// UpdateStudent(73)
+	deleteStudentById(23)
+	UpdateStudent(73)
 
 }
 
