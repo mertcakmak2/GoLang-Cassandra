@@ -15,7 +15,7 @@ func main() {
 
 	var err error
 	cluster := gocql.NewCluster("localhost")
-	cluster.Keyspace = "restfulapi"
+	cluster.Keyspace = "csks"
 	Session, err = cluster.CreateSession()
 	if err != nil {
 		panic(err)
