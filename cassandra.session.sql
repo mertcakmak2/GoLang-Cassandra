@@ -1,0 +1,1 @@
+SELECT * FROM students WHERE lastdate >= '2022-08-31' ALLOW FILTERING
