@@ -18,6 +18,10 @@ func NewStudentService() StudentService {
 	var err error
 	cluster := gocql.NewCluster("localhost")
 	cluster.Keyspace = "csdb"
+	// Kubernetes Cluster
+	// cluster := gocql.NewCluster("34.118.87.49:32359")
+	// cluster.Authenticator = gocql.PasswordAuthenticator{Username: "cassandra", Password: "nYzltDZ0gG"}
+	// cluster.Keyspace = "test"
 	Session, err := cluster.CreateSession()
 	if err != nil {
 		panic(err)
